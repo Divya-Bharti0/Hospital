@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <h1>Bhopal Hospital</h1>
+        <img src="hospital.png" alt="Hospital Image">
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#appointment">Book Appointment</a></li>
+            <li><a href="#doctors">Doctors</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Homepage Banner Section -->
+    <section id="home" class="banner">
+        <h2>Welcome to City Hospital</h2>
+        <p>Your Health, Our Priority</p>
+    </section>
+
+    <!-- Appointment Booking Form -->
+    <section id="appointment">
+        <img src="app.avif" alt="Appointment">
+
+        <h2>Book an Appointment</h2>
+        <form id="appointmentForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="doctor">Choose Doctor:</label>
+            <select id="doctor" name="doctor">
+                <option value="Dr. Divya Bharti">Dr. Divya (Cardiology)</option>
+                <option value="Dr. priya">Dr. priya(Orthopedics)</option>
+                <option value="Dr. Riyaa">Dr. Riyaa (Dermatology)</option>
+            </select>
+
+            <label for="date">Choose Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Choose Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Doctors Section -->
+    <section id="doctors">
+        <h2>Meet Our Doctors</h2>
+        <div class="doctor-card">
+            <img src="divya.png" alt="Dr. Divya Bharti">
+            <h3>Dr. Divya</h3>
+            <p>Specialty: Cardiology</p>
+        </div>
+        <div class="doctor-card">
+            <img src="priya.avif" alt="Dr. priya">
+            <h3>Dr. priya</h3>
+            <p>Specialty: Orthopedics</p>
+        </div>
+        <div class="doctor-card">
+            <img src="riyaa.png" alt="Dr. Riyaa">
+            <h3>Dr. Riyaa</h3>
+            <p>Specialty: Dermatology</p>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@cityhospital.com</p>
+        <p>Phone: +123-456-7890</p>
+        <p>Address: 123 Health St, Cityville</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
